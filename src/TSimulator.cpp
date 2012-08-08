@@ -1,18 +1,18 @@
-#include "simulator.h"
-#include "List.h"
+#include "TSimulator.h"
+#include "TList.h"
 #include <stdlib.h>
 
-Simulator::Simulator()
+TSimulator::TSimulator()
 {
     
 }
 
-Simulator::~Simulator()
+TSimulator::~TSimulator()
 {
     
 }
 
-void Simulator::simulate()
+void TSimulator::simulate()
 {
     mobs->reset();
     Mob* current = mobs->getItem();

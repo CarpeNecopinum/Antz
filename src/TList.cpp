@@ -1,26 +1,26 @@
-#include "List.h"
+#include "TList.h"
 #include <stdlib.h>
 
-List::List()
+TList::TList()
 {
     this->first = NULL;
     this->current = NULL;
     length = 0;
 }
 
-List::~List()
+TList::~TList()
 {
     
 }
 
-bool List::isEmpty()
+bool TList::isEmpty()
 {
     return (this->first == NULL);
 }
 
-int List::addItem(void* item)
+int TList::addItem(void* item)
 {
-    ListItem* added = new ListItem();
+    TListItem* added = new TListItem();
     added->object = item;
     added->next = NULL;
     
@@ -28,7 +28,7 @@ int List::addItem(void* item)
     {
         this->first = added;
     } else {
-        ListItem* curr = this->first;
+        TListItem* curr = this->first;
         while (curr->next != NULL) curr = curr->next;
         curr->next = added;        
     }
@@ -36,12 +36,12 @@ int List::addItem(void* item)
     return length;
 }
 
-void List::reset()
+void TList::reset()
 {
     this->current = this->first;
 }
 
-void List::next()
+void TList::next()
 {
     if (this->current != NULL)
     {
@@ -49,7 +49,7 @@ void List::next()
     }
 }
 
-void* List::getItem()
+void* TList::getItem()
 {
     if (this->current != NULL)
     {

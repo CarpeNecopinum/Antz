@@ -5,9 +5,19 @@
       <df name="bin">
       </df>
       <df name="src">
+        <in>List.cpp</in>
+        <in>List.h</in>
+        <in>ListItem.h</in>
+        <in>Mob.cpp</in>
+        <in>Mob.h</in>
+        <in>Model.cpp</in>
+        <in>Model.h</in>
         <in>antz.cpp</in>
         <in>main.cpp</in>
         <in>main.h</in>
+        <in>renderer.h</in>
+        <in>simulator.cpp</in>
+        <in>simulator.h</in>
       </df>
     </df>
     <logicalFolder name="ExternalFiles"

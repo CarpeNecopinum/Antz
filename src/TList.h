@@ -1,10 +1,10 @@
-#include "ListItem.h"
+#include "TListItem.h"
 
-class List
+class TList
 {
 public:
-    List();
-    ~List();
+    TList();
+    ~TList();
     
     int addItem(void* item);
     bool isEmpty();
@@ -13,7 +13,7 @@ public:
     void* getItem();
     
 private:
-    ListItem *first;
-    ListItem *current;
+    TListItem *first;
+    TListItem *current;
     int length = 0;   
 };

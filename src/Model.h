@@ -1,13 +1,7 @@
-#ifndef MODEL_H
-#define	MODEL_H
-
-class Model {
+class TModel {
 public:
-    Model();
-    ~Model();
+    TModel();
+    ~TModel();
 private:
 
 };
-
-#endif	/* MODEL_H */
-
